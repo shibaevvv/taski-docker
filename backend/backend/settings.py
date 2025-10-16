@@ -13,7 +13,8 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = os.getenv('DEBUG', 'False') == 'True'
 
 # ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '').split()
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'localhost').split(',')
+# ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'localhost').split(',')
+ALLOWED_HOSTS = ['localhost', '62.84.120.79', 'shvv.redirectme.net', '127.0.0.1']
 
 
 # Application definition
