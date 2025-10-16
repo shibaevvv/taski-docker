@@ -205,10 +205,8 @@ jobs:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
         message: |
-          Деплой успешно выполнен!
-          ${{ github.actor }} создал commit:
-          Сообщение Commit: ${{ github.event.commits[0].message }}
-          
-          Repository: ${{ github.repository }}
-            
+          Деплой успешно выполнен! 🫡
+
+          ${{ github.actor }} создал commit: ${{ github.event.commits[0].message }}
+          Репозиторий: ${{ github.repository }}
           Смотри изменения: https://github.com/${{ github.repository }}/commit/${{github.sha}}
